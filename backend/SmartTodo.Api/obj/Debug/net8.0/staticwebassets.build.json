@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DMQSKtkhkPbsoJ1jKEv3aMWueXMwlmum6lERvjevGZY=",
+  "Source": "SmartTodo.Api",
+  "BasePath": "_content/SmartTodo.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

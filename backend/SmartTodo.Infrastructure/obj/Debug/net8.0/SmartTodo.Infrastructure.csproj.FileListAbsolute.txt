@@ -1,0 +1,17 @@
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Infrastructure.deps.json
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Infrastructure.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Infrastructure.pdb
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Application.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Domain.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Domain.pdb
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\bin\Debug\net8.0\SmartTodo.Application.pdb
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.csproj.AssemblyReference.cache
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.AssemblyInfoInputs.cache
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.AssemblyInfo.cs
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTod.9022EFAE.Up2Date
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\refint\SmartTodo.Infrastructure.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\SmartTodo.Infrastructure.pdb
+E:\Codes\SmartToDo\backend\SmartTodo.Infrastructure\obj\Debug\net8.0\ref\SmartTodo.Infrastructure.dll

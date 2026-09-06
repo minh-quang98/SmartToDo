@@ -1,0 +1,11 @@
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\bin\Debug\net8.0\SmartTodo.Domain.deps.json
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\bin\Debug\net8.0\SmartTodo.Domain.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\bin\Debug\net8.0\SmartTodo.Domain.pdb
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\SmartTodo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\SmartTodo.Domain.AssemblyInfoInputs.cache
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\SmartTodo.Domain.AssemblyInfo.cs
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\SmartTodo.Domain.csproj.CoreCompileInputs.cache
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\SmartTodo.Domain.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\refint\SmartTodo.Domain.dll
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\SmartTodo.Domain.pdb
+E:\Codes\SmartToDo\backend\SmartTodo.Domain\obj\Debug\net8.0\ref\SmartTodo.Domain.dll
