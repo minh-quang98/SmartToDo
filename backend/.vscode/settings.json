@@ -1,0 +1,13 @@
+{
+  "dotnet.defaultSolution": "SmartTodo.sln",
+  "[csharp]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.parameterHints.enabled": true
+  }
+}

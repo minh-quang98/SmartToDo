@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using SmartTodo.Domain.Enums;
+
+namespace SmartTodo.Domain.Entities
+{
+    public class TodoItem
+    {
+        public Guid Id { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public string? Description { get; set; }
+        public TodoStatus Status { get; set; } = TodoStatus.New;
+        public TodoPriority Priority { get; set; } = TodoPriority.Medium;
+        public DateTime? DueDate { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime CreateAt { get; set; }
+        public DateTime? UpdateAt { get; set; }
+    }
+}
