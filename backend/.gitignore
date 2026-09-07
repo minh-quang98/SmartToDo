@@ -1,0 +1,43 @@
+# .NET build and publish output
+[Bb]in/
+[Oo]bj/
+[Aa]rtifacts/
+[Pp]ublish/
+
+# Visual Studio and JetBrains Rider local state
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Test results and coverage reports
+[Tt]est[Rr]esults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Generated NuGet packages
+*.nupkg
+*.snupkg
+
+# Local logs, temporary files, and editor history
+*.log
+*.tmp
+*.bak
+.history/
+
+# Local environment overrides (keep example files)
+.env
+.env.*
+!.env.example
+!.env.sample
+appsettings.Local.json
+appsettings.*.Local.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
