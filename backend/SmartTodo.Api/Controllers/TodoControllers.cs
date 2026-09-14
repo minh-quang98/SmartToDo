@@ -36,7 +36,7 @@ namespace SmartTodo.Api.Controllers
                     Description = todo.Description,
                     Status = todo.Status,
                     Priority = todo.Priority,
-                    dueDate = todo.DueDate,
+                    DueDate = todo.DueDate,
                     CreateAt = todo.CreateAt
                 }).ToListAsync(cancellationToken);
 
@@ -60,7 +60,7 @@ namespace SmartTodo.Api.Controllers
                     Description = todo.Description,
                     Status = todo.Status,
                     Priority = todo.Priority,
-                    dueDate = todo.DueDate,
+                    DueDate = todo.DueDate,
                     CreateAt = todo.CreateAt
                 })
                 .FirstOrDefaultAsync(cancellationToken);
@@ -112,13 +112,71 @@ namespace SmartTodo.Api.Controllers
                 Description = todo.Description,
                 Status = todo.Status,
                 Priority = todo.Priority,
-                dueDate = todo.DueDate,
+                DueDate = todo.DueDate,
                 CreateAt = todo.CreateAt
             };
 
             return CreatedAtAction(
                 nameof(GetById), new { id = todo.Id }, response
             );
+        }
+
+        [HttpPut("{id:guid}")]
+        public async Task<ActionResult<TodoResponse>> Update(
+            Guid id,
+            UpdateTodoRequest request,
+            CancellationToken cancellationToken
+        )
+        {
+            // Lấy entity được EF theo dõi để SaveChangesAsync lưu các thay đổi.
+            // Không dùng AsNoTracking hoặc Select sang DTO khi cần cập nhật entity.
+            var todo = await _dbContext.TodoItems
+                .FirstOrDefaultAsync(
+                    todo => todo.Id == id && !todo.IsDeleted,
+                    cancellationToken);
+
+            if (todo is null)
+            {
+                // Todo không tồn tại hoặc đã xóa mềm: trả 404, không phải 400.
+                return NotFound(new
+                {
+                    message = $"Không tìm thấy To do với id = {id}"
+                });
+            }
+
+            if (string.IsNullOrWhiteSpace(request.Title))
+            {
+                return BadRequest(new
+                {
+                    message = "Tiêu đề không được để trống"
+                });
+            }
+
+            todo.Title = request.Title.Trim();
+            todo.Description = request.Description?.Trim();
+            todo.Status = request.Status;
+            todo.Priority = request.Priority;
+            todo.DueDate = request.DueDate;
+            // Server đặt thời gian cập nhật, tránh client gửi null hoặc thời gian sai.
+            todo.UpdateAt = DateTime.UtcNow;
+
+            await _dbContext.SaveChangesAsync(cancellationToken);
+
+            // Chỉ chuyển entity thành DTO sau khi lưu thành công.
+            var response = new TodoResponse
+            {
+                Id = todo.Id,
+                Title = todo.Title,
+                Description = todo.Description,
+                Status = todo.Status,
+                Priority = todo.Priority,
+                DueDate = todo.DueDate,
+                // Trả ngày tạo thật thay vì giá trị DateTime mặc định.
+                CreateAt = todo.CreateAt,
+                UpdateAt = todo.UpdateAt
+            };
+
+            return Ok(response);
         }
     }
 }
